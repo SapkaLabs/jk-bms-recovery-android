@@ -1,19 +1,30 @@
-# Provenance
+# Credits and third-party notices
 
-This checkout contains the original Python tool by ech0-py:
-https://github.com/ech0-py/jkbms_password_retrieve_tool
+JK BMS Recovery for Android is licensed under the [MIT License](LICENSE).
+Copyright 2026 SapkaLabs. Third-party material retains its copyright notices and license terms.
 
-Original revision inspected: `863d97cd5770676606145cbe892b1e4e0be84135`.
-The upstream README credits https://github.com/fl4p/batmon-ha as its source material.
+## Original tool
 
-The `android/` directory is a new native implementation of the device-information request and response layout documented by that source. The original Python files have been preserved unchanged.
+The Android app uses the device-information protocol in
+[ech0-py/jkbms_password_retrieve_tool](https://github.com/ech0-py/jkbms_password_retrieve_tool).
+The original Python files and Git history remain in this repository.
 
-Gradle wrapper scripts and JAR are from Gradle v8.13.0, distributed under Apache License 2.0:
-[Apache License 2.0 text](docs/licenses/gradle-LICENSE.txt) / https://github.com/gradle/gradle/blob/v8.13.0/LICENSE
+The inspected upstream revision was `863d97cd5770676606145cbe892b1e4e0be84135`.
+Its README credits [fl4p/batmon-ha](https://github.com/fl4p/batmon-ha).
 
-JUnit is a test-only dependency, distributed under Eclipse Public License 1.0:
-https://github.com/junit-team/junit4/blob/r4.13.2/LICENSE-junit.txt
+## Gradle
 
-No upstream project license was present at the inspected revision. This notice records provenance; it does not grant a license to upstream material.
+The wrapper scripts and JAR come from Gradle 8.13.0 under Apache License 2.0.
+The [license text](docs/licenses/gradle-LICENSE.txt) is included in this repository.
+The [Gradle source](https://github.com/gradle/gradle/tree/v8.13.0) contains the original notices.
 
-Screenshots in `docs/screenshots/` were supplied by the project user for publication and show their real hardware test with passcodes masked.
+## JUnit
+
+Local tests use JUnit 4.13.2 under
+[Eclipse Public License 1.0](https://github.com/junit-team/junit4/blob/r4.13.2/LICENSE-junit.txt).
+The app has no JUnit runtime dependency.
+
+## Screenshots
+
+The user supplied the screenshots in `docs/screenshots/` for publication.
+They show a hardware test with the passcodes hidden.
